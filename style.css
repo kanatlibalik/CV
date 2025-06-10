@@ -1,0 +1,234 @@
+html {
+    color: rgb(19, 42, 19);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.75rem;
+    padding: 0.5rem;
+    background-color: rgba(19, 42, 19, 0.9);
+    color: rgb(248, 255, 233);
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding: 0.5rem 0 0 1rem;
+}
+
+p{
+    margin: 0 1rem;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 0.3rem;
+}
+
+ul>li {
+    font-size: 1rem;
+    padding: 0 1rem 0.5rem 0.2rem;
+}
+
+li>ul{
+    margin-top: .5rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+.note {
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.nav-container {
+    font-size: 1.75rem;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(248, 255, 233);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(19, 42, 19, 0.4);
+}
+
+.navbar {
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.nav-links {
+    display: inline;
+    gap: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.nav-link,
+.drop-down li {
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+}
+
+.nav-link a{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link a:hover {
+    background: rgb(19, 42, 19);
+}
+
+.nav-link:hover ul.drop-down {
+    display: block;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: rgb(248, 255, 233);
+    color: rgb(19, 42, 19);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.drop-down li {
+    display: block;
+    text-align: left;
+
+}
+
+.nav-link:hover,
+.drop-down li:hover {
+    background-color: rgb(19, 42, 19);
+    color: rgb(248, 255, 233);
+    border-radius: 0.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.logo,
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* svg ve img demedigimde gorselleri ortalayamiyordum. */
+
+.logo svg {
+    text-align: center;
+    width: 40%;
+}
+
+.photo img {
+    padding-top: 1rem;
+    width: 40%;
+}
+
+footer {
+    background-color: rgba(19, 42, 19, 0.9);
+    color: rgb(248, 255, 233);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0rem;
+}
+
+.contact-info p {
+    padding-left: 2rem;
+    color: rgba(248, 255, 233, 0.8);
+}
+
+.contact-info p span {
+    color: rgb(248, 255, 233);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    padding-bottom: 1rem;
+}
+
+.instagram,
+.facebook,
+.linkedin {
+    width: 30px;
+    height: auto;
+}
+
+.instagram a,
+.facebook a,
+.linkedin a {
+    fill: rgb(248, 255, 233);
+}
+@media screen and (min-width: 600px) {
+
+    #skills,
+    #experiences {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+    }
+
+    #skills>h1,
+    #experiences>h1 {
+        grid-column: 1 / span 2;
+    }
+
+    .nav-container {
+        width: 98%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* .nav-container .navbar .nav-links .nav-link{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    } */
+
+    /* .nav-link {
+        padding: 0rem 3.5vw;
+    } */
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+}
